@@ -1,0 +1,144 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "React Basics",
+      "views": 120,
+      "author": "Mazen",
+      "category": "React",
+      "summary": "Introduction to core React concepts like components, JSX, and props.",
+      "createdAt": "2024-01-05"
+    },
+    {
+      "id": "2",
+      "title": "React Hooks",
+      "views": 240,
+      "author": "Mazen",
+      "category": "React",
+      "summary": "Deep dive into React hooks such as useState, useEffect, and custom hooks.",
+      "createdAt": "2024-01-10"
+    },
+    {
+      "id": "3",
+      "title": "React Query Intro",
+      "views": 360,
+      "author": "Mazen",
+      "category": "Data Fetching",
+      "summary": "How React Query simplifies server state management and caching.",
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "4",
+      "title": "Advanced React",
+      "views": 480,
+      "author": "Ahmed",
+      "category": "React",
+      "summary": "Advanced patterns including memoization, context optimization, and performance.",
+      "createdAt": "2024-01-20"
+    },
+    {
+      "id": "5",
+      "title": "Vite with React",
+      "views": 150,
+      "author": "Sara",
+      "category": "Tooling",
+      "summary": "Why Vite is faster than traditional bundlers and how to use it with React.",
+      "createdAt": "2024-01-22"
+    },
+    {
+      "id": "6",
+      "title": "Tailwind CSS",
+      "views": 275,
+      "author": "Mazen",
+      "category": "CSS",
+      "summary": "Utility-first CSS framework for building modern user interfaces.",
+      "createdAt": "2024-01-25"
+    },
+    {
+      "id": "7",
+      "title": "shadcn UI",
+      "views": 390,
+      "author": "Omar",
+      "category": "UI",
+      "summary": "Composable and accessible components built on top of Radix UI.",
+      "createdAt": "2024-01-28"
+    },
+    {
+      "id": "8",
+      "title": "Frontend Architecture",
+      "views": 520,
+      "author": "Mazen",
+      "category": "Architecture",
+      "summary": "Scalable folder structures and architecture for frontend projects.",
+      "createdAt": "2024-02-01"
+    },
+    {
+      "id": "9",
+      "title": "Performance Optimization",
+      "views": 610,
+      "author": "Ahmed",
+      "category": "Performance",
+      "summary": "Techniques to optimize React applications for better performance.",
+      "createdAt": "2024-02-05"
+    },
+    {
+      "id": "10",
+      "title": "State Management",
+      "views": 430,
+      "author": "Sara",
+      "category": "State",
+      "summary": "Comparison between Redux, Zustand, Context API, and React Query.",
+      "createdAt": "2024-02-10"
+    },
+    {
+      "id": "11",
+      "title": "React Patterns",
+      "views": 510,
+      "author": "Mazen",
+      "category": "Patterns",
+      "summary": "Common React patterns for reusable and maintainable components.",
+      "createdAt": "2024-02-14"
+    },
+    {
+      "id": "12",
+      "title": "Testing React Apps",
+      "views": 290,
+      "author": "Omar",
+      "category": "Testing",
+      "summary": "Testing React components using Jest and React Testing Library.",
+      "createdAt": "2024-02-18"
+    }
+  ],
+  "comments": [
+    { "id": "1", "text": "Very clear explanation of the basics", "postId": "1", "user": "Ali" },
+    { "id": "2", "text": "Helped me understand JSX better", "postId": "1", "user": "Nour" },
+
+    { "id": "3", "text": "Hooks changed the way I write React", "postId": "2", "user": "Youssef" },
+    { "id": "4", "text": "Custom hooks section was amazing", "postId": "2", "user": "Maha" },
+
+    { "id": "5", "text": "React Query is a game changer", "postId": "3", "user": "Karim" },
+    { "id": "6", "text": "Caching finally makes sense", "postId": "3", "user": "Salma" },
+
+    { "id": "7", "text": "Advanced but easy to follow", "postId": "4", "user": "Omar" },
+    { "id": "8", "text": "Loved the performance tips", "postId": "4", "user": "Ali" },
+
+    { "id": "9", "text": "Vite is insanely fast", "postId": "5", "user": "Nour" },
+    { "id": "10", "text": "Switched from CRA to Vite", "postId": "5", "user": "Youssef" },
+
+    { "id": "11", "text": "Tailwind speeds up development", "postId": "6", "user": "Maha" },
+
+    { "id": "12", "text": "shadcn UI components are clean", "postId": "7", "user": "Karim" },
+
+    { "id": "13", "text": "Architecture advice is gold", "postId": "8", "user": "Salma" },
+
+    { "id": "14", "text": "Performance optimization is underrated", "postId": "9", "user": "Omar" },
+
+    { "id": "15", "text": "State management comparison was helpful", "postId": "10", "user": "Ali" }
+  ],
+  "profile": {
+    "name": "Mazen",
+    "role": "Frontend Developer",
+    "experience": "3 years",
+    "skills": ["React", "React Query","Nextjs", "Tailwind", "shadcn UI", "Vite"]
+  }
+}
