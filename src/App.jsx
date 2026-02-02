@@ -5,12 +5,15 @@ import { Spinner } from "./components/ui/spinner";
 const App = () => {
 	const { data, isLoading, error } = useQuery({
 		queryKey: ["getPosts"],
-		queryFn: async () => {
-			const res = await fetch("http://localhost:3000/posts");
-			if (!res.ok) throw new Error("Failed to fetch");
-			return res.json();
-		},
+		queryFn: getPosts
 	});
+
+	// fetch data
+	async function getPosts() {
+		const res=await fetch("http://localhost:3000/posts");
+		if (!res.ok) throw new Error("Failed to fetch");
+		return res.json();
+	} 
 
 	if (isLoading)
 		return (
