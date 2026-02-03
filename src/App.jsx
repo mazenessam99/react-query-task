@@ -1,12 +1,24 @@
-import { useQuery } from "@tanstack/react-query";
+import { queryOptions, useQuery, useSuspenseQuery } from "@tanstack/react-query";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Spinner } from "./components/ui/spinner";
 
 const App = () => {
-	const { data, isLoading, error } = useQuery({
-		queryKey: ["getPosts"],
-		queryFn: getPosts
-	});
+
+	// const { data, isLoading, error } = useQuery({
+	// 	queryKey: ["getPosts"],
+	// 	queryFn: getPosts
+	// });
+
+	function groups(id){
+		return queryOptions({
+			queryKey:[id],
+			queryFn:getPosts
+			})
+		}
+		const { data, isLoading, error } = useQuery(groups(1));
+
+		// ------- Suspense Query -------
+		// const { data, isLoading, error } = useSuspenseQuery(groups(1));
 
 	// fetch data
 	async function getPosts() {
@@ -15,6 +27,7 @@ const App = () => {
 		return res.json();
 	} 
 
+	//Loading
 	if (isLoading)
 		return (
 			<div className="flex justify-center items-center min-h-screen">
@@ -22,6 +35,7 @@ const App = () => {
 			</div>
 		);
 
+	// Error
 	if (error)
 		return (
 			<p className="text-center text-red-500 mt-10">
